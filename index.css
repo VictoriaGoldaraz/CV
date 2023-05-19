@@ -93,6 +93,11 @@ body{
     font-size: 14px;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .contact_info.educacion li{
     margin-top: 15px;
 }
