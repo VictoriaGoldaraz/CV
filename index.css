@@ -1,0 +1,223 @@
+@import url(#);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,1);
+}
+
+.container .left_side{
+    position: relative;
+    background: rgb(243, 72, 72);
+    padding: 40px;
+}
+
+.profile_text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(240, 157, 157);
+}
+
+.profile_text h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+    
+}
+
+.profile_text h2 span{
+    font-size: 0.6em;
+    font-weight: 300;
+}
+
+.contact_info{
+    padding-top: 40px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 80;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact_info ul{
+    position: relative;
+}
+
+.contact_info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact_info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(241, 186, 186);
+}
+
+.contact_info ul li span{
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact_info.educacion li{
+    margin-top: 15px;
+}
+
+.contact_info.educacion h5{
+    color: rgb(241, 186, 186);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.contact_info.educacion h4:nth-child(2){
+    color: #fff;
+    font-size: large;
+}
+
+.contact_info.educacion h4{
+    color: #fff;
+    font-size: medium;
+}
+
+.contact_info.lang .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(7, 0, 0);
+    display: block;
+    margin-top: 5px;
+}
+
+.contact_info.lang .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(240, 164, 164);
+}
+
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    margin-top: 1rem;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: rgb(243, 61, 61);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: rgb(70, 25, 25);
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+    margin-bottom: 10px;
+}
+
+.about .box .year_company{
+    min-width: 150px;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: rgb(242, 92, 92);
+    font-weight: 600;
+
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: rgb(184, 77, 77);
+    font-size: 16px;
+}
+
+.cat_tools .box{
+    margin: 2px;
+    margin-bottom: 30px;
+}
+
+.cat_tools .box h4{
+    text-transform: uppercase;
+    color: rgb(184, 77, 77);
+    font-size: 16px;
+}
+
+.cat_tools .box ul {
+    position: relative;
+    padding-left: 1rem;
+    color: rgb(70, 25, 25);
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 700px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+@media (max-width: 600px)
+{
+    .about .box
+    {
+        flex-direction: column;
+    }
+    .about .box .year_company
+    {
+        min-width: 150px;
+        margin-bottom: 5px;
+}
+}
